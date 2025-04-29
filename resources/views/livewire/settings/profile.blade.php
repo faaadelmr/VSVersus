@@ -49,6 +49,13 @@ new class extends Component {
                 <flux:input wire:model="email" :label="__('Email')" type="email" required disabled autocomplete="email" />
             </div>
 
+            <div>
+                <label for="photo" class="block font-medium text-sm text-gray-700 dark:text-gray-300">Photo</label>
+                <input type="file" id="photo" wire:model="photo" class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" />
+            </div>
+
+
+
             <div class="flex items-center gap-4">
                 <div class="flex items-center justify-end">
                     <flux:button variant="primary" type="submit" class="w-full">{{ __('Save') }}</flux:button>

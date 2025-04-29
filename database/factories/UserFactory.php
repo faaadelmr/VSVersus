@@ -17,10 +17,10 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        return [
+        return [            
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
+            'email_verified_at' => now(),            
             'workos_id' => 'fake-'.Str::random(10),
             'remember_token' => Str::random(10),
             'avatar' => '',
@@ -36,4 +36,7 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+
+    
+    
 }
